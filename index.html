@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио Данилы Илюшина</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="background-settings.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/background-settings.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon/icon.svg">
 </head>
 <body id="top">
     <!-- Хедер -->
@@ -44,8 +45,8 @@
                     <h2 class="hero-name">Данила Илюшин</h2>
                     <p class="hero-title">Мультимедийный специалист</p>
                     <div class="hero-buttons">
-                        <a href="#" class="btn btn-vk">VK</a>
-                        <a href="#" class="btn btn-telegram">Telegram</a>
+                        <a href="https://vk.com/daaniiila_il" class="btn btn-vk" target="_blank" rel="noopener noreferrer">VK</a>
+                        <a href="https://t.me/daaniiila_il" class="btn btn-telegram" target="_blank" rel="noopener noreferrer">Telegram</a>
                     </div>
                 </div>
             </div>
@@ -124,7 +125,10 @@
                 <div class="case-grid">
                     <div class="case-item">
                         <div class="case-image">
-                            <img src="case1.JPG" alt="Знание.Первые МАРАФОН">
+                            <picture>
+                                <source srcset="images/case1.JPG.webp" type="image/webp">
+                                <img src="images/case1.JPG" alt="Знание.Первые МАРАФОН" loading="lazy">
+                            </picture>
                         </div>
                         <div class="case-info">
                             <h4 class="case-name">Знание.Первые МАРАФОН</h4>
@@ -137,7 +141,10 @@
                     </div>
                     <div class="case-item">
                         <div class="case-image">
-                            <img src="case2.PNG" alt="Мисс РГУ 2025">
+                            <picture>
+                                <source srcset="images/case2.PNG.webp" type="image/webp">
+                                <img src="images/case2.PNG" alt="Мисс РГУ 2025" loading="lazy">
+                            </picture>
                         </div>
                         <div class="case-info">
                             <h4 class="case-name">Мисс РГУ 2025</h4>
@@ -150,7 +157,10 @@
                     </div>
                     <div class="case-item">
                         <div class="case-image">
-                            <img src="case3.JPG" alt="Молодежь против фашизма">
+                            <picture>
+                                <source srcset="images/case3.JPG.webp" type="image/webp">
+                                <img src="images/case3.JPG" alt="Молодежь против фашизма" loading="lazy">
+                            </picture>
                         </div>
                         <div class="case-info">
                             <h4 class="case-name">"Молодежь против фашизма"</h4>
@@ -178,79 +188,39 @@
                 <!-- Подблок "Примеры коротких видео" -->
                 <div class="video-category">
                     <h3 class="video-category-title">Примеры коротких видео</h3>
-                    <div class="short-videos-carousel">
-                        <div class="short-video-item">
-                            <div class="video-container">
-                                <iframe class="video-iframe" src="about:blank" data-src="https://vk.com/video_ext.php?oid=231452694&id=456239021&hd=1" frameborder="0" allowfullscreen></iframe>
-                                <div class="video-overlay">
-                                    <div class="play-button">▶</div>
-                                </div>
-                            </div>
-                            <h4 class="short-video-title">Отчет до конкурса "Мисс РГУ 2025"</h4>
+                    <div class="shorts-carousel">
+                        <div class="shorts-card">
+                            <div class="shorts-video-container"></div>
+                            <div class="shorts-title">Отсчет до конкурса "Мисс РГУ 2025"</div>
                         </div>
-                        <div class="short-video-item">
-                            <div class="video-container">
-                                <iframe class="video-iframe" src="about:blank" data-src="https://vk.com/video_ext.php?oid=231452694&id=456239018&hd=1" frameborder="0" allowfullscreen></iframe>
-                                <div class="video-overlay">
-                                    <div class="play-button">▶</div>
-                                </div>
-                            </div>
-                            <h4 class="short-video-title">Отчет до конкурса "Мистер РГУ 2025</h4>
+                        <div class="shorts-card">
+                            <div class="shorts-video-container"></div>
+                            <div class="shorts-title">Альбом памяти</div>
                         </div>
-                        <div class="short-video-item">
-                            <div class="video-container">
-                                <iframe class="video-iframe" src="about:blank" data-src="https://vk.com/video_ext.php?oid=231452694&id=456239019&hd=1" frameborder="0" allowfullscreen></iframe>
-                                <div class="video-overlay">
-                                    <div class="play-button">▶</div>
-                                </div>
-                            </div>
-                            <h4 class="short-video-title">Объявление о начале конкурса "Мистер РГУ 2025"</h4>
+                        <div class="shorts-card">
+                            <div class="shorts-video-container"></div>
+                            <div class="shorts-title">Объявление о начала конкурса "Мистер РГУ 2025"</div>
                         </div>
-                        <div class="short-video-item">
-                            <div class="video-container">
-                                <iframe class="video-iframe" src="about:blank" data-src="https://vk.com/video_ext.php?oid=231452694&id=456239020&hd=1" frameborder="0" allowfullscreen></iframe>
-                                <div class="video-overlay">
-                                    <div class="play-button">▶</div>
-                                </div>
-                            </div>
-                            <h4 class="short-video-title">Альбом памяти</h4>
+                        <div class="shorts-card">
+                            <div class="shorts-video-container"></div>
+                            <div class="shorts-title">Итоги 2023 года</div>
                         </div>
-                        <div class="short-video-item">
-                            <div class="video-container">
-                                <iframe class="video-iframe" src="about:blank" data-src="https://vk.com/video_ext.php?oid=231452694&id=456239017&hd=1" frameborder="0" allowfullscreen></iframe>
-                                <div class="video-overlay">
-                                    <div class="play-button">▶</div>
-                                </div>
-                            </div>
-                            <h4 class="short-video-title">Итоги 2023 года</h4>
+                        <div class="shorts-card">
+                            <div class="shorts-video-container"></div>
+                            <div class="shorts-title">Отсчет до конкурса "Мистер РГУ 2025"</div>
                         </div>
                     </div>
+                    <div class="shorts-carousel-controls">
+                        <button class="shorts-prev" aria-label="Предыдущее видео">
+                            <svg viewBox="0 0 24 24"><path d="M15.5 19l-7-7 7-7"/></svg>
+                        </button>
+                        <button class="shorts-next" aria-label="Следующее видео">
+                            <svg viewBox="0 0 24 24"><path d="M8.5 5l7 7-7 7"/></svg>
+                        </button>
+                    </div>
                 </div>
-                
                 <!-- Подблок "Примеры масштабных видео" -->
-                <div class="video-category">
-                    <h3 class="video-category-title">Примеры масштабных видео</h3>
-                    <div class="video-grid">
-                        <div class="video-item">
-                            <div class="video-placeholder large">
-                                <span>Масштабное видео 1</span>
-                            </div>
-                            <div class="video-info">
-                                <h4 class="video-name">Название масштабного видео 1</h4>
-                                <p class="video-description">Описание масштабного видео</p>
-                            </div>
-                        </div>
-                        <div class="video-item">
-                            <div class="video-placeholder large">
-                                <span>Масштабное видео 2</span>
-                            </div>
-                            <div class="video-info">
-                                <h4 class="video-name">Название масштабного видео 2</h4>
-                                <p class="video-description">Описание масштабного видео</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <!-- УДАЛЕНО: весь блок с масштабными видео -->
             </div>
         </div>
     </section>
@@ -272,6 +242,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html> 
